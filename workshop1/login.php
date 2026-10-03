@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_form = mysqli_real_escape_string($conexion, $_POST['email']);
     $password_form = $_POST['password'];
 
-    // Se cambió 'email =' por 'usuario =' porque tu tabla usa la columna 'usuario'
+    
     $sql = "SELECT * FROM usuarios WHERE usuario = '$email_form'";
     $resultado = mysqli_query($conexion, $sql);
 

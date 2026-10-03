@@ -1,3 +1,7 @@
+<?php
+// Iniciar sesión para poder leer si hay errores guardados
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
