@@ -14,12 +14,14 @@
         <form action="login.php" method="POST">
             <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.com" required>
+               
             </div>
             
             <div class="form-group">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="********" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="********" required>
+                
             </div>
             
             <label class="form-check" for="remember">
