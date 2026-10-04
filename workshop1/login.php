@@ -28,20 +28,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado && mysqli_num_rows($resultado) == 1) {
         $usuario_data = mysqli_fetch_assoc($resultado);
         
-        // Verifica la contraseña (compara texto plano o encriptado)
+        // Verifica la contraseña 
         if (password_verify($password_form, $usuario_data['password']) || $password_form == $usuario_data['password']) {
             
             $_SESSION['usuario_id'] = $usuario_data['id'] ?? null;
             $_SESSION['usuario_name'] = $usuario_data['usuario'];
             
             echo "¡Inicio de sesión exitoso!";
-            // header("Location: dashboard.php");
+             header("Location: menu.php");
             
         } else {
-            echo "Usuario o contraseña incorrectos.";
+             $_SESSION['error_login'] = "Credenciales inválidas.";
+            header("Location: index.php");
+            exit();
         }
     } else {
-        echo "Usuario o contraseña incorrectos.";
+         $_SESSION['error_login'] = "Credenciales inválidas.";
+        header("Location: index.php");
+        exit();
     }
 }
 

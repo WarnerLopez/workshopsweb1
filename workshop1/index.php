@@ -15,6 +15,18 @@ session_start();
 
     <div class="login-card">
         <h2>Iniciar Sesión</h2>
+
+
+        <?php if (isset($_SESSION['error_login'])): ?>
+            <div class="alert-error">
+                <?php 
+                    echo $_SESSION['error_login']; 
+                    unset($_SESSION['error_login']); // Borra el mensaje para que no aparezca al recargar
+                ?>
+            </div>
+        <?php endif; ?>
+
+
         <form action="login.php" method="POST">
             <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
