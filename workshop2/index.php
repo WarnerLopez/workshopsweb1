@@ -27,7 +27,9 @@ session_start();
         <?php endif; ?>
 
 
-        <form action="login.php" method="POST">
+       
+        <form action="actions/login.php" method="POST">
+
             <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.com" required>

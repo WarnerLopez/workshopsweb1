@@ -1,0 +1,14 @@
+<?php
+$host = "localhost";
+$usuario_db = "root";
+$password_db = "";
+$nombre_db = "login_workshop";
+
+// Crear la conexión
+$conexion = mysqli_connect($host, $usuario_db, $password_db, $nombre_db);
+
+// Verificar conexión
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+?>
