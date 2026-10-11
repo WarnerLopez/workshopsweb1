@@ -49,6 +49,10 @@ session_start();
             
             <button type="submit" class="btn-submit">Ingresar</button>
         </form>
+        <div class="register-container">
+            <p>¿No tienes una cuenta?</p>
+            <a href="register.php" class="btn-register">Registrarse</a>
+        </div>
     </div>
 </body>
 </html>
