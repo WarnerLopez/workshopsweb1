@@ -118,6 +118,11 @@
             font-size: 14px;
             text-align: center;
         }
+
+
+
+
+
         .btn-logout {
             display: block;
             text-decoration: none;
@@ -133,3 +138,38 @@
             .btn-logout:hover {
                 background-color: #dc2626;
          }
+
+
+
+
+
+         .register-container {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #eee; /* Línea sutil de separación */
+    padding-top: 15px;
+}
+
+.register-container p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-register {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo secundario */
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.btn-register:hover {
+    background-color: #e2e6ea;
+}
