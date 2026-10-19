@@ -10,7 +10,8 @@ session_start();
     <title>Iniciar Sesión</title>
      <link rel="stylesheet" href="styles.css">
 </head>
-<body >
+<body class="auth-page">
+
 
 
     <div class="login-card">

@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Base de la consulta SQL
     $sql = "UPDATE usuarios SET usuario = '$email', provincia_id = $provincia_id";
     
-    // Si el usuario escribió una nueva contraseña, la encriptamos y la agregamos al SQL
+    //  la encriptamos la  contraseña
     if (!empty($password_raw)) {
         $password_segura = password_hash($password_raw, PASSWORD_BCRYPT);
         $sql .= ", password = '$password_segura'";

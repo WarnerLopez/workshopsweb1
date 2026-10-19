@@ -13,7 +13,8 @@ $res_prov = mysqli_query($conexion, $sql_prov);
     <title>Registro de Usuarios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="auth-page">
+
     <div class="login-card">
         <h2>Registrarse</h2>
         

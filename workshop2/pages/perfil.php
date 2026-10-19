@@ -27,7 +27,8 @@ $res_prov = mysqli_query($conexion, $sql_prov);
     <title>Mi Perfil</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="page-body">
+
     <div class="login-card">
         <h2>Modificar Perfil</h2>
 

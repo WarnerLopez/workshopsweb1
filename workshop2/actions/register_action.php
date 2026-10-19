@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Encriptar contraseña de forma segura
     $password_segura = password_hash($password_raw, PASSWORD_BCRYPT);
     
-    // Insertar en la tabla (asumiendo que tu columna de correo se llama 'usuario')
+    // Insertar en la tabla usuarios
     $sql = "INSERT INTO usuarios (usuario, password, provincia_id) VALUES ('$email', '$password_segura', $provincia_id)";
     
     if (mysqli_query($conexion, $sql)) {
